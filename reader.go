@@ -65,7 +65,7 @@ func NewReader(r io.ReaderAt) (*Reader, error) {
 	case LZMACompression:
 		squash.d = decompress.Lzma{}
 	case LZOCompression:
-		squash.d = decompress.Lzo{}
+		return nil, errors.New("LZO compression not supported")
 	case XZCompression:
 		squash.d = decompress.Xz{}
 	case LZ4Compression:
