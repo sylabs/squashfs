@@ -94,12 +94,7 @@ func (r *Reader) Init() error {
 			}
 			r.decompressor = xz
 		case LzoCompression:
-			var lz *compression.Lzo
-			lz, err = compression.NewLzoCompressorWithOptions(r.r)
-			if err != nil {
-				return err
-			}
-			r.decompressor = lz
+			return errors.New("LZO compression not supported")
 		case Lz4Compression:
 			var lz4 *compression.Lz4
 			lz4, err = compression.NewLz4CompressorWithOptions(r.r)
@@ -124,7 +119,7 @@ func (r *Reader) Init() error {
 		case LzmaCompression:
 			r.decompressor = &compression.Lzma{}
 		case LzoCompression:
-			r.decompressor = &compression.Lzo{}
+			return errors.New("LZO compression not supported")
 		case XzCompression:
 			r.decompressor = &compression.Xz{}
 		case Lz4Compression:

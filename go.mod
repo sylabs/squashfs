@@ -16,7 +16,6 @@ require (
 require (
 	github.com/golang/snappy v0.0.3 // indirect
 	github.com/google/go-cmp v0.5.5 // indirect
-	github.com/rasky/go-lzo v0.0.0-20200203143853-96a758eda86e
 	github.com/therootcompany/xz v1.0.1
 	go.lsp.dev/uri v0.3.0 // indirect
 	gopkg.in/ini.v1 v1.62.0 // indirect
