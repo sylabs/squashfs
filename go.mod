@@ -1,4 +1,4 @@
-module github.com/CalebQ42/squashfs
+module github.com/sylabs/squashfs
 
 go 1.18
 
