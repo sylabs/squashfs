@@ -1,3 +1,18 @@
+# sylabs/squashfs
+
+This is a fork of CalebQ42/squashfs for the purpose of maintaing a
+package that removes the lzo dependency, so that it does not contain
+GPL code.
+
+**Branches**
+
+* remove-lzo - main from CalebQ42/squashfs with lzo support removed.
+* remove-lzo-v0.5.4 - upstream v0.5.4 with lzo support removed.
+* main - upstream main, with the module renamed to sylabs/squashfs.
+
+-----
+
+
 # squashfs (WIP)
 
 [![PkgGoDev](https://pkg.go.dev/badge/github.com/sylabs/squashfs)](https://pkg.go.dev/github.com/sylabs/squashfs) [![Go Report Card](https://goreportcard.com/badge/github.com/sylabs/squashfs)](https://goreportcard.com/report/github.com/sylabs/squashfs)
