@@ -7,9 +7,9 @@ import (
 	"math"
 	"time"
 
-	"github.com/CalebQ42/squashfs/internal/compression"
-	"github.com/CalebQ42/squashfs/internal/inode"
-	"github.com/CalebQ42/squashfs/internal/rawreader"
+	"github.com/sylabs/squashfs/internal/compression"
+	"github.com/sylabs/squashfs/internal/inode"
+	"github.com/sylabs/squashfs/internal/rawreader"
 )
 
 const (
