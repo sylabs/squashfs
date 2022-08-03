@@ -3,7 +3,7 @@ package squashfs
 import (
 	"io"
 
-	"github.com/CalebQ42/squashfs/internal/toreader"
+	"github.com/sylabs/squashfs/internal/toreader"
 )
 
 type fragEntry struct {

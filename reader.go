@@ -7,11 +7,11 @@ import (
 	"math"
 	"time"
 
-	"github.com/CalebQ42/squashfs/internal/decompress"
-	"github.com/CalebQ42/squashfs/internal/directory"
-	"github.com/CalebQ42/squashfs/internal/inode"
-	"github.com/CalebQ42/squashfs/internal/metadata"
-	"github.com/CalebQ42/squashfs/internal/toreader"
+	"github.com/sylabs/squashfs/internal/decompress"
+	"github.com/sylabs/squashfs/internal/directory"
+	"github.com/sylabs/squashfs/internal/inode"
+	"github.com/sylabs/squashfs/internal/metadata"
+	"github.com/sylabs/squashfs/internal/toreader"
 )
 
 type Reader struct {

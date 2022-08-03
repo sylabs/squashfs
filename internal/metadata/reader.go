@@ -4,7 +4,7 @@ import (
 	"encoding/binary"
 	"io"
 
-	"github.com/CalebQ42/squashfs/internal/decompress"
+	"github.com/sylabs/squashfs/internal/decompress"
 )
 
 type Reader struct {
