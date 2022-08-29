@@ -8,8 +8,8 @@ import (
 	"slices"
 	"strings"
 
-	squashfslow "github.com/CalebQ42/squashfs/low"
-	"github.com/CalebQ42/squashfs/low/directory"
+	squashfslow "github.com/sylabs/squashfs/low"
+	"github.com/sylabs/squashfs/low/directory"
 )
 
 // FS is a fs.FS representation of a squashfs directory.

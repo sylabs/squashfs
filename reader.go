@@ -4,8 +4,8 @@ import (
 	"io"
 	"time"
 
-	"github.com/CalebQ42/squashfs/internal/toreader"
-	squashfslow "github.com/CalebQ42/squashfs/low"
+	"github.com/sylabs/squashfs/internal/toreader"
+	squashfslow "github.com/sylabs/squashfs/low"
 )
 
 type Reader struct {

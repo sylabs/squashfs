@@ -5,7 +5,7 @@ import (
 	"io/fs"
 	"runtime"
 
-	"github.com/CalebQ42/squashfs/internal/routinemanager"
+	"github.com/sylabs/squashfs/internal/routinemanager"
 )
 
 type ExtractionOptions struct {

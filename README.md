@@ -2,6 +2,19 @@
 
 [![PkgGoDev](https://pkg.go.dev/badge/github.com/CalebQ42/squashfs)](https://pkg.go.dev/github.com/CalebQ42/squashfs) [![Go Report Card](https://goreportcard.com/badge/github.com/CalebQ42/squashfs)](https://goreportcard.com/report/github.com/CalebQ42/squashfs)
 
+This is a fork of `CalebQ42/squashfs` for the purpose of maintaing a package that removes the lzo dependency, so that it does not contain GPL code.
+
+## Branches
+
+* `remove-lzo` - `main` from `CalebQ42/squashfs` with LZO support removed.
+* `remove-lzo-vX.Y.Z` - `vX.Y.Z` from `CalebQ42/squashfs` with LZO support removed.
+
+## Tags
+
+* `vX.Y.Z` - `vX.Y.Z` from `CalebQ42/squashfs` with LZO support removed.
+
+-----
+
 A PURE Go library to read squashfs. There is currently no plans to add archive creation support as it will almost always be better to just call `mksquashfs`. I could see some possible use cases, but probably won't spend time on it unless it's requested (open a discussion if you want this feature).
 
 The library has two parts with this `github.com/CalebQ42/squashfs` being easy to use as it implements `io/fs` interfaces and doesn't expose unnecessary information. 95% this is the library you want. If you need lower level access to the information, use `github.com/CalebQ42/squashfs/low` where far more information is exposed.
