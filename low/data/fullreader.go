@@ -8,8 +8,8 @@ import (
 	"runtime"
 	"sync"
 
-	"github.com/CalebQ42/squashfs/internal/decompress"
-	"github.com/CalebQ42/squashfs/internal/toreader"
+	"github.com/sylabs/squashfs/internal/decompress"
+	"github.com/sylabs/squashfs/internal/toreader"
 )
 
 type FragReaderConstructor func() (io.Reader, error)

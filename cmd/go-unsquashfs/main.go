@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/CalebQ42/squashfs"
+	"github.com/sylabs/squashfs"
 )
 
 func main() {
