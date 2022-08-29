@@ -4,11 +4,11 @@ import (
 	"errors"
 	"io"
 
-	"github.com/CalebQ42/squashfs/internal/data"
-	"github.com/CalebQ42/squashfs/internal/directory"
-	"github.com/CalebQ42/squashfs/internal/inode"
-	"github.com/CalebQ42/squashfs/internal/metadata"
-	"github.com/CalebQ42/squashfs/internal/toreader"
+	"github.com/sylabs/squashfs/internal/data"
+	"github.com/sylabs/squashfs/internal/directory"
+	"github.com/sylabs/squashfs/internal/inode"
+	"github.com/sylabs/squashfs/internal/metadata"
+	"github.com/sylabs/squashfs/internal/toreader"
 )
 
 func (r Reader) inodeFromRef(ref uint64) (i inode.Inode, err error) {

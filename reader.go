@@ -7,11 +7,11 @@ import (
 	"math"
 	"time"
 
-	"github.com/CalebQ42/squashfs/internal/decompress"
-	"github.com/CalebQ42/squashfs/internal/directory"
-	"github.com/CalebQ42/squashfs/internal/inode"
-	"github.com/CalebQ42/squashfs/internal/metadata"
-	"github.com/CalebQ42/squashfs/internal/toreader"
+	"github.com/sylabs/squashfs/internal/decompress"
+	"github.com/sylabs/squashfs/internal/directory"
+	"github.com/sylabs/squashfs/internal/inode"
+	"github.com/sylabs/squashfs/internal/metadata"
+	"github.com/sylabs/squashfs/internal/toreader"
 )
 
 type Reader struct {
@@ -72,7 +72,7 @@ func NewReader(r io.ReaderAt) (*Reader, error) {
 	case LZMACompression:
 		squash.d = decompress.Lzma{}
 	case LZOCompression:
-		squash.d = decompress.Lzo{}
+		return nil, errors.New("LZO compression not supported")
 	case XZCompression:
 		squash.d = decompress.Xz{}
 	case LZ4Compression:

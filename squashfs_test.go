@@ -14,7 +14,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/CalebQ42/squashfs"
+	"github.com/sylabs/squashfs"
 )
 
 const (
