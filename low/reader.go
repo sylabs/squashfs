@@ -6,10 +6,10 @@ import (
 	"io"
 	"math"
 
-	"github.com/CalebQ42/squashfs/internal/decompress"
-	"github.com/CalebQ42/squashfs/internal/metadata"
-	"github.com/CalebQ42/squashfs/internal/toreader"
-	"github.com/CalebQ42/squashfs/low/inode"
+	"github.com/sylabs/squashfs/internal/decompress"
+	"github.com/sylabs/squashfs/internal/metadata"
+	"github.com/sylabs/squashfs/internal/toreader"
+	"github.com/sylabs/squashfs/low/inode"
 )
 
 // The types of compression supported by squashfs
@@ -60,8 +60,6 @@ func NewReader(r io.ReaderAt) (rdr *Reader, err error) {
 		rdr.d = decompress.Zlib{}
 	case LZMACompression:
 		rdr.d = decompress.Lzma{}
-	case LZOCompression:
-		rdr.d = decompress.Lzo{}
 	case XZCompression:
 		rdr.d = decompress.Xz{}
 	case LZ4Compression:

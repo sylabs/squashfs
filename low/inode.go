@@ -1,10 +1,10 @@
 package squashfslow
 
 import (
-	"github.com/CalebQ42/squashfs/internal/metadata"
-	"github.com/CalebQ42/squashfs/internal/toreader"
-	"github.com/CalebQ42/squashfs/low/directory"
-	"github.com/CalebQ42/squashfs/low/inode"
+	"github.com/sylabs/squashfs/internal/metadata"
+	"github.com/sylabs/squashfs/internal/toreader"
+	"github.com/sylabs/squashfs/low/directory"
+	"github.com/sylabs/squashfs/low/inode"
 )
 
 func (r *Reader) InodeFromRef(ref uint64) (inode.Inode, error) {

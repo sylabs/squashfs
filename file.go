@@ -11,10 +11,10 @@ import (
 	"runtime"
 	"strconv"
 
-	"github.com/CalebQ42/squashfs/internal/routinemanager"
-	squashfslow "github.com/CalebQ42/squashfs/low"
-	"github.com/CalebQ42/squashfs/low/data"
-	"github.com/CalebQ42/squashfs/low/inode"
+	"github.com/sylabs/squashfs/internal/routinemanager"
+	squashfslow "github.com/sylabs/squashfs/low"
+	"github.com/sylabs/squashfs/low/data"
+	"github.com/sylabs/squashfs/low/inode"
 )
 
 // File represents a file inside a squashfs archive.

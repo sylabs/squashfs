@@ -4,11 +4,11 @@ import (
 	"errors"
 	"io"
 
-	"github.com/CalebQ42/squashfs/internal/metadata"
-	"github.com/CalebQ42/squashfs/internal/toreader"
-	"github.com/CalebQ42/squashfs/low/data"
-	"github.com/CalebQ42/squashfs/low/directory"
-	"github.com/CalebQ42/squashfs/low/inode"
+	"github.com/sylabs/squashfs/internal/metadata"
+	"github.com/sylabs/squashfs/internal/toreader"
+	"github.com/sylabs/squashfs/low/data"
+	"github.com/sylabs/squashfs/low/directory"
+	"github.com/sylabs/squashfs/low/inode"
 )
 
 type FileBase struct {

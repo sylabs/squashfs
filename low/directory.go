@@ -7,10 +7,10 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/CalebQ42/squashfs/internal/metadata"
-	"github.com/CalebQ42/squashfs/internal/toreader"
-	"github.com/CalebQ42/squashfs/low/directory"
-	"github.com/CalebQ42/squashfs/low/inode"
+	"github.com/sylabs/squashfs/internal/metadata"
+	"github.com/sylabs/squashfs/internal/toreader"
+	"github.com/sylabs/squashfs/low/directory"
+	"github.com/sylabs/squashfs/low/inode"
 )
 
 type Directory struct {
