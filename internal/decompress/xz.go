@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"io"
 
-	"github.com/therootcompany/xz"
+	"github.com/mikelolasagasti/xz"
 )
 
 type Xz struct{}
